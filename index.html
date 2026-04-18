@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangata | Café-Bar & Restaurante</title>
+    <meta name="description"
+        content="Mangata, tu café-bar y restaurante ideal para desayunar, comer o cenar en El Morche, Torrox Costa.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for an elegant and youthfully fresh mix -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">Café-Bar Mangata</div>
+        <div class="contact-header">
+            <span class="phone-icon">📞</span>
+            <span class="phone-text">Pedidos: <a href="tel:601650694"><strong>601 65 06 94</strong></a></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="badge">Café & Restaurante Mangata</span>
+                <h1>El lugar donde <em>el sabor</em> se encuentra con la <em>elegancia</em>.</h1>
+                <p>Ven por el café, quédate por las risas. Ya sea para desayunar, comer, cenar o simplemente disfrutar
+                    del momento, en Mangata la magia está servida.</p>
+                <div class="hero-buttons">
+                    <button id="open-menu" class="btn btn-primary">Ver la Carta</button>
+                    <a href="#gallery" class="btn btn-secondary">Galería</a>
+                </div>
+            </div>
+            <!-- Using our generated cafe interior image as hero background, we'll set it in CSS, but here's an abstract structure in case we want an img tag -->
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding reveal">
+            <div class="container text-center">
+                <h2>Comer, picar o cenar... ¡Tú decides!</h2>
+                <hr class="divider">
+                <p class="subtitle">En Mangata entendemos que cada hora del día tiene su encanto. Por eso ofrecemos
+                    platos frescos, divertidos y con un toque muy nuestro, perfectos para compartir o para darte ese
+                    capricho elegante que te mereces.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery section-padding bg-apricot reveal">
+            <div class="container">
+                <h2 class="text-center">Nuestra Esencia</h2>
+                <p class="text-center subtitle">Un vistazo a nuestro mundo.</p>
+                <div class="gallery-wrapper">
+                    <button class="slider-arrow left-arrow" aria-label="Anterior">❮</button>
+                    <div class="gallery-slider">
+                        <div class="gallery-item">
+                            <img src="images/cafe_interior.png" alt="Interior Mangata">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/delicious_food.png" alt="Deliciosa comida Mangata">
+                        </div>
+                        <!-- Placeholders for future gallery items -->
+                        <div class="gallery-item placeholder-img">
+                            <span>+ Más Imágenes</span>
+                        </div>
+                        <div class="gallery-item placeholder-img">
+                            <span>+ Más Imágenes</span>
+                        </div>
+                    </div>
+                    <button class="slider-arrow right-arrow" aria-label="Siguiente">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="location section-padding reveal">
+            <div class="container text-center">
+                <h2>¿Dónde estamos?</h2>
+                <hr class="divider">
+                <p class="address">Crta Almería 158 | 29793 El Morche (Torrox Costa)</p>
+                <div class="map-wrapper">
+                    <!-- Google Maps Embed for the requested address -->
+                    <iframe
+                        src="https://maps.google.com/maps?q=Crta%20Almer%C3%ADa%20158,%20El%20Morche%20Torrox%20Costa&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-logo">Mangata.</h3>
+            <p>El punto de encuentro en El Morche.</p>
+            <div class="footer-design">
+                <p>¿Te gusta esta web? Visita: <a href="https://www.bitlayout.es" target="_blank">bitLayout.es</a> 💻✨
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Pop-Up for Carta -->
+    <div id="carta-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-menu">&times;</button>
+
+            <div class="carta-header">
+                <h2>Nuestra Carta</h2>
+                <p>Para compartir... o no.</p>
+            </div>
+
+            <div class="carta-body">
+                <div class="carta-section">
+                    <h3>Para Empezar (Picoteo Top)</h3>
+                    <ul>
+                        <li>
+                            <div class="item-title">Patatas "Mangata" <span class="price">7.50€</span></div>
+                            <div class="item-desc">Nuestra versión atrevida con salsa especial suave, bacon crujiente y
+                                cebolla frita.</div>
+                        </li>
+                        <li>
+                            <div class="item-title">Croquetas Cremosas <span class="price">9.00€</span></div>
+                            <div class="item-desc">De jamón ibérico o de setas trufadas, elegantes y que se deshacen en
+                                la boca.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carta-section">
+                    <h3>Comidas & Cenas (Platos Estrella)</h3>
+                    <ul>
+                        <li>
+                            <div class="item-title">Burger "Dark Wine" <span class="price">11.50€</span></div>
+                            <div class="item-desc">Doble ternera, queso fundido, mermelada de frutos rojos y pan brioche
+                                súper tierno.</div>
+                        </li>
+                        <li>
+                            <div class="item-title">Bao de Costilla <span class="price">10.00€</span></div>
+                            <div class="item-desc">Costilla desmigada a baja temperatura con un toque ahumado y cebolla
+                                encurtida. Pura juventud.</div>
+                        </li>
+                        <li>
+                            <div class="item-title">Ensalada "El Morche" <span class="price">9.50€</span></div>
+                            <div class="item-desc">Fresca, elegante. Con hojas verdes, nueces tostadas, aguacate y
+                                vinagreta de miel y mostaza.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="carta-footer">
+                <p>No olvides dejar hueco para el postre.<br>
+                    📞 Pide para llevar: <a href="tel:601650694"><strong>601 65 06 94</strong></a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
