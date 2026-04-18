@@ -547,8 +547,7 @@ footer {
     .hero-buttons { flex-direction: column; }
     .navbar { padding: 15px 5%; flex-direction: column; gap: 10px; }
     
-    .left-arrow { left: 5px; }
-    .right-arrow { right: 5px; }
+    .slider-arrow { display: none; }
     .gallery-item { flex: 0 0 85%; }
 }
 
