@@ -97,6 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 heroBg.style.transform = `translateY(${scrolled * 0.4}px)`;
             }
         });
+    }
+
     // Efecto Juicy 3: Visibilidad del botón flotante según scroll
     if (floatingOrderBtn) {
         window.addEventListener('scroll', () => {
