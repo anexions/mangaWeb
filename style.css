@@ -200,6 +200,7 @@ h2 {
 
 /* Buttons & Interactions */
 .btn {
+    display: inline-block; /* Crucial para que los enlaces se vean como botones sólidos */
     padding: 14px 32px;
     border-radius: 30px;
     font-size: 1.05rem;
@@ -208,6 +209,7 @@ h2 {
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     border: none;
     font-family: var(--font-primary);
+    text-align: center;
 }
 
 .btn:active, .slider-arrow:active, .close-btn:active {
@@ -241,10 +243,10 @@ h2 {
 }
 
 .btn-justeat {
-    background-color: var(--just-eat);
-    color: var(--white);
+    background-color: var(--just-eat) !important;
+    color: var(--white) !important;
     box-shadow: 0 4px 15px rgba(243, 97, 0, 0.3);
-    border: 2px solid var(--white) !important; /* Borde sólido blanco como en Galería */
+    border: 2px solid var(--white) !important; /* Borde sólido blanco para que no esté "desnudo" */
 }
 
 .btn-justeat:hover {
