@@ -109,6 +109,7 @@ h2 {
     font-weight: 500;
     font-size: 0.95rem;
     box-shadow: 0 4px 10px rgba(67, 40, 24, 0.2);
+    white-space: nowrap; /* Evita que el número se rompa en dos filas */
 }
 
 .contact-header strong {
@@ -640,10 +641,27 @@ footer {
     .slider-arrow { display: none; }
     .gallery-item { flex: 0 0 85%; }
 
-    /* Mejora de botones en móvil */
+    /* Fix Header Overlap */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    /* Botones en Vertical */
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
     .hero-buttons .btn {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
 
     /* Quitar sección de delivery del modal en móvil por estética */
