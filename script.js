@@ -3,13 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('carta-modal');
     const openBtn = document.getElementById('open-menu');
     const closeBtn = document.getElementById('close-menu');
-    const floatingOrderBtn = document.getElementById('floating-order');
 
     // Función para abrir la carta con efecto cascada (stagger)
     openBtn.addEventListener('click', (e) => {
         e.preventDefault();
         modal.classList.add('active');
-        if (floatingOrderBtn) floatingOrderBtn.classList.add('hidden');
+        document.body.style.overflow = 'hidden'; // Prevenir scroll de fondo
         
         // Efecto Juicy: Cascada en los elementos de la carta
         const staggerItems = modal.querySelectorAll('.carta-section, .carta-header');
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtn.addEventListener('click', () => {
         modal.classList.remove('active');
         document.body.style.overflow = 'auto'; // Restaurar scroll
-        if (floatingOrderBtn) floatingOrderBtn.classList.remove('hidden');
     });
 
     // Cerrar la carta si se hace click fuera del contenido (en el overlay oscuro)
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target === modal) {
             modal.classList.remove('active');
             document.body.style.overflow = 'auto';
-            if (floatingOrderBtn) floatingOrderBtn.classList.remove('hidden');
         }
     });
 
@@ -99,19 +96,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Efecto Juicy 3: Visibilidad del botón flotante según scroll
-    if (floatingOrderBtn) {
-        window.addEventListener('scroll', () => {
-            if (!modal.classList.contains('active')) {
-                if (window.scrollY > 300) {
-                    floatingOrderBtn.classList.remove('hidden');
-                } else {
-                    floatingOrderBtn.classList.add('hidden');
-                }
-            }
-        });
-        // Iniciar oculto si estamos arriba
-        if (window.scrollY <= 300) floatingOrderBtn.classList.add('hidden');
-    }
 
 });

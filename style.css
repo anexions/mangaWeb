@@ -244,51 +244,13 @@ h2 {
     background-color: var(--just-eat);
     color: var(--white);
     box-shadow: 0 4px 15px rgba(243, 97, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Añadimos borde para definirlo mejor */
+    border: 2px solid var(--white) !important; /* Borde sólido blanco como en Galería */
 }
 
 .btn-justeat:hover {
     background-color: var(--just-eat-hover);
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(243, 97, 0, 0.5);
-}
-
-/* Floating Order Button */
-.floating-order {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: var(--just-eat);
-    color: var(--white);
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    z-index: 99;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-.floating-order:hover {
-    transform: translateY(-5px) scale(1.05);
-    background-color: var(--just-eat-hover);
-    box-shadow: 0 15px 35px rgba(243, 97, 0, 0.4);
-}
-
-.floating-order i {
-    font-size: 1.2rem;
-}
-
-.floating-order.hidden {
-    opacity: 0;
-    transform: translateY(100px);
-    pointer-events: none;
 }
 
 /* Gallery Slider & Arrows */
