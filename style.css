@@ -133,7 +133,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 130%; /* Para tener margen en el parallax */
-    background-image: url('images/cafe_interior.png');
+    background-image: url('images/background.jpeg');
     background-size: cover;
     background-position: center;
     z-index: 0;
